@@ -1,7 +1,16 @@
+<div align="center">
+   
 # ONE: Oracle Next Education
 
 # Secret Friend Challenge
 Secret Friend: a website developed with HTML, CSS, and JavaScript for the ONE (Oracle Next Education) program. Created for study and portfolio purposes.
+
+![last-commit](https://img.shields.io/github/last-commit/dougpsnts/challengeSecretFriend?style=flat&logo=git&logoColor=white&color=0080ff) ![repo-top-language](https://img.shields.io/github/languages/top/dougpsnts/challengeSecretFriend?style=flat&color=0080ff) ![repo-language-count](https://img.shields.io/github/languages/count/dougpsnts/challengeSecretFriend?style=flat&color=0080ff)
+
+<p><em>Built with the tools and technologies:</em></p>
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black) ![Css](https://img.shields.io/badge/CSS-0A16A9.svg?style=flat&logo=Css&logoColor=white)
+</div>
 
 ## Features
 
@@ -46,4 +55,4 @@ Secret Friend: a website developed with HTML, CSS, and JavaScript for the ONE (O
 
 https://github.com/user-attachments/assets/b9ebb0d8-05a8-45e9-a6b7-7a64a3744582
 
-
+</div>
