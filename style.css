@@ -200,9 +200,6 @@ h2 {
 
 /* --- Responsivity --- */
 @media (max-width: 425px) {
-    .result-column p{
-        display: none; 
-    }
 
     .hide-btn, .reset-btn {
         width: 100%;
