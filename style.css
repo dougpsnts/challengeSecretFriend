@@ -1,0 +1,243 @@
+/* --- Reset and Global style --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* background color in case the img doesn't load */
+    background-image: url('./assets/Background_SF.png'); 
+    color: #3f3d56;
+}
+
+/* --- Main Header --- */
+.main-header {
+    background-color: #3f3d56;
+    color: white;
+    text-align: center;
+    max-height: 50dvh;
+    padding: 20px 20px 0 20px;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.header-illustration {
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+/* --- Main container --- */
+.container {
+    background-color: #fff9ef; 
+    max-width: 1000px;
+    margin: -40px auto 40px auto; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Required for overlay */
+    z-index: 10;
+}
+
+/* --- Colluns --- */
+.result-column{
+    border-left: 1px solid #ddd;
+    margin-left: 1.2rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.setup-column, .result-column{
+    flex: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3f3d56;
+    margin-bottom: 20px;
+}
+
+/* --- Buttons (Base style) --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/* --- Buttons (especific) --- */
+.draw-btn {
+    background-color: #ff9900;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.add-btn {
+    background-color: #3f3d56;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hide-btn {
+    background-color: #3f3d56;
+    margin-right: 10px;
+}
+
+.reset-btn {
+    background-color: #ff9900;
+    margin-left: 10px;
+}
+
+.action-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.action-buttons .icon {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+/* Disabled buttons*/
+.hide-btn:disabled,
+.reset-btn:disabled,
+.draw-btn:disabled {
+  background-color: #ff990062;
+  color: #c2c2c2;
+  box-shadow: none;
+  cursor: auto;
+  pointer-events: none;
+}
+
+/* --- Error Message --- */
+.error-message1, .error-message2 {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+/* --- Input Forms --- */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex-grow: 1;
+    border: 2px solid #ddd;
+    border-right: none;
+    padding: 10px 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    min-width: 200px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff9900;
+}
+
+/* --- Name Tags --- */
+.name-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #3f3d56;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.remove-tag {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* --- Result Area --- */
+.secret-name {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #32cd32; 
+    line-height: 1.2;
+}
+
+/* --- Responsivity --- */
+@media (max-width: 425px) {
+    .result-column p{
+        display: none; 
+    }
+
+    .hide-btn, .reset-btn {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-top: -30px;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .result-column {
+        border-left: none;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .header-illustration {
+    max-width: 300px;
+    margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .secret-name {
+        font-size: 3rem;
+    }
+
+    .main-header h1 {
+        font-size: 2.5rem;
+    }
+}

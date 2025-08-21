@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Friend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b2a8ba932.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Secret Friend</h1>
+        <img src="./assets/Gift_SF.png" alt="Ilustração de duas pessoas trocando presentes" class="header-illustration">
+    </header>
+
+    <main class="container">
+        <section class="setup-column">
+            <h2>Friends' name:</h2>
+            
+            <button class="btn draw-btn" onclick="drawFriend()">Draw a secret friend</button>
+            
+            <div class="input-group">
+                <input class="input-name" type="text" placeholder="Type a name...">
+                <button class="btn add-btn" onclick="addFriend()">Add</button>
+            </div>
+            <div class="error-message1" hidden>
+                <span>Please type a valide and unic name!</span>
+            </div>
+            <div class="name-tags">
+                <span class="tag">Friend 1 <button class="remove-tag" onclick="eraseFriend()">&times;</button></span>
+                <span class="tag">Friend 2 <button class="remove-tag" onclick="eraseFriend()">&times;</button></span>
+                <span class="tag">Friend 3 <button class="remove-tag" onclick="eraseFriend()">&times;</button></span>
+            </div>
+        </section>
+
+        <section class="result-column">
+            <h2>Your secret friend is...</h2>
+            <p class="secret-name" hidden></p>
+            <p class="error-message2" hidden>There is no more friends to draw.</p>
+            <span class="hidden-icon"><i class="fa fa-eye-slash fa-5x" hidden></i></span>
+            <div class="action-buttons">
+                <button class="btn hide-btn" onclick="hideName()">
+                    <span class="icon">&#128065;</span> 
+                    <p>Hide secret name</p>
+                </button>
+                <button class="btn reset-btn" onclick="resetGame()">
+                    <span class="icon">&#8635;</span> 
+                    <p>Reset game</p>
+                </button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
